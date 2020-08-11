@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(30, 56, 68);
+}
+
+#homeBtn {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    background: rgba(255,255,255, .2);
+}
+#homeBtn:hover {
+cursor: pointer;
+transform: translateY(-1px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(164, 211, 233);
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+#clickCount {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#gameNumber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+#submitStart {
+    display: flex;
+    flex-direction: row;
+}
+
+#bushNumber{
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(223, 239, 247);
+    border: 2px rgb(30, 56, 68) solid;
+}
+
+#bushNumber:focus{
+    outline: none;
+}
+
+#startBtn {
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(78, 117, 136);
+    color: rgb(223, 239, 247);
+}
+
+#startBtn:hover{
+    cursor: pointer;
+    transform: translateY(-1px)
+}
+
+#gameBoard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+}
+
+#gameBoard > * {
+    width: 100px;
+    position: relative;
+    margin: 20px;
+    
+}
+
+#bush{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    /* opacity: .5; */
+}
+
+.snake {
+    width: 100px;
+    height: 80px;
+    margin-top: 23px;
+    position: absolute;
+}
+
+.bear {
+    width: 55px;
+    margin-top: 30px;
+    margin-left: 12px;
+    height: 70px;
+    position: absolute;
+}
+
+/* Utilities */
+
+.showPicture {
+    animation: show 1.5s ease;
+}
+
+.clicked {
+    pointer-events: none;
+    opacity: .35;
+}
+
+.end {
+    animation: end 3.5s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.noClick {
+    pointer-events: none;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modalWin {
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #d9ff97;
+}
+
+.modal-content {
+    background-color: #b22222;
+    text-align: center;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #8c1717;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.modal-content-win {
+    background-color: #c5ff6c;
+    text-align: center;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #78ca20;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.modal-content-win h2 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.modal-content p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.modal-content-win p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+}
+
+.closeWin {
+    color: black;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.closeWin:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#playAgain {
+    border: none;
+    padding: 5px 10px;
+    background-color: gray;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#playAgainWin {
+    border: 2px #66a522 solid;
+    padding: 5px 10px;
+    background-color: #78ca20;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#playAgain:hover {
+    cursor: pointer;
+    transform: translateY(-0.5px)
+}
+
+#playAgainWin:hover {
+    cursor: pointer;
+    transform: translateY(-0.5px)
+}
+
+/* Animations */
+
+@keyframes show {
+    25% {
+        transform: translateY(-60px);
+    }
+    80%{
+        transform: translateY(-60px);
+    }
+}
+
+@keyframes end {
+    25% {
+        opacity: .25;
+        z-index: 2;
+    }
+    50% {
+        opacity: .5;
+        z-index: 2;
+    }
+    75% {
+        opacity: .75;
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        z-index: 2;
+    }
+}

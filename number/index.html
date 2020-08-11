@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <a href="../index.html"><button id="homeBtn">Go Home</button></a>
+
+    <div class="container">
+        <header id="title">
+            <h1>Number Guesser 3000</h1>
+        </header>
+        <div id="game">
+            <div id="start" >
+                <h2>Think Of Any Number</h2><br><br>
+                <h2>From 1 to 1000</h2><br><br>
+                <h3>Type it in the box so you don't forget</h3>
+                <h3>Don't worry, I can't see it</h3>
+                <input type="text" id="myNumber">
+                <button id="ready" class="btn" onclick="startNow(event)">Ready</button>
+            </div>
+            <div id="guess" class="hidden">
+                <h2>Is your number</h2>
+                <h2 id="numGuess"></h2>
+                <div id="guessBtns">
+                    <button id="noDown" class="btn gameBtn">No, Lower</button>
+                    <button id="yes" class="btn gameBtn">Yes</button>
+                    <button id="noUp" class="btn gameBtn">No, Higher</button>
+                </div>
+                <h3 id="theNumber"></h3>
+            </div>
+            <div id="win" class="hidden">
+                <h1>I Win</h1>
+                <button id="again" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>

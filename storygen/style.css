@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Mulish&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  font-family: 'mulish', sans-serif;
+}
+*:before, *:after { box-sizing: border-box;}
+
+#homeBtn {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 5px;
+  background: rgba(255,255,255, .2);
+}
+#homeBtn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
+.wrapper {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7070dc;
+  border-bottom: 2px solid #2b2b69;
+  font-size: 40px;
+}
+.container {
+  height: 80vh;
+  background: #bcbcec;
+}
+
+.elements {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#who { color: #cd8500;}
+#what { color: #599619;}
+#where { color: #9e0508;}
+
+.content {
+  height: 300px;
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn {
+  font-size: 28px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 2px solid #50509e;
+  box-shadow: 1px 1px 3px #2b2b69;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 5px #2b2b69;
+}

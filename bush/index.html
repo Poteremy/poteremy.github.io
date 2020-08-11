@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <a href="../index.html"><button id="homeBtn">Back To Potato's Directory</button></a>
+
+    <div class="container">
+      <div id="myModalWin" class="modalWin">
+        <div class="modal-content-win">
+            <span class="closeWin">&times;</span>
+            <div class="modal-container-win">
+                <h2>You win!</h2>
+                <p> Congratulations! You found all the bears and didn't get bit by the snake. Think you can handle more bushes next time?</p>
+                <button type="button" id="playAgainWin">Play Again</button>
+            </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-container">
+                  <h2>Game Over</h2>
+                  <p> You picked the wrong bush and the snake popped out and bit you.</p>
+                  <p id="endClickCount"></p>
+                  <button type="button" id="playAgain">Play Again</button>
+              </div>
+          </div>
+      </div>
+      <h1>Click A Bush</h1>
+      <h2 id="clickCount" class="hidden"></h2>
+      <div id="gameNumber">
+          <div id="submitStart">
+              <h2>How Many Bushes?</h2>
+              <input type="text" id="bushNumber">
+          </div>
+          <button type="button" id="startBtn">Let's Play!</button>
+      </div>
+      <div id="gameBoard" class="hidden">
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

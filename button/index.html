@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <a href="../index.html"><button id="homeBtn">Back To Potato's Directory</button></a>
+
+    <div class="btn-container">
+      <button id="btn" class="point">Button</button>
+    </div>
+
+    <div class="customs">
+      <span>
+        <label for="">1.</label>
+        <input type="text" class="custom" id="customOne" placeholder="Custom Color">
+        <div id="cd1"></div>
+      </span>
+      <span>
+        <label for="">2.</label>
+        <input type="text" class="custom" id="customTwo" placeholder="Custom Color">
+        <div id="cd2"></div>
+      </span>
+      <span>
+        <label for="">3.</label>
+        <input type="text" class="custom" id="customThree" placeholder="Custom Color">
+        <div id="cd3"></div>
+      </span>
+      <span>
+        <label for="">4.</label>
+        <input type="text" class="custom" id="customFour" placeholder="Custom Color">
+        <div id="cd4"></div>
+      </span>
+    </div>
+
+    <div class="select-container">
+      <div class="select-column">
+        <input type="text" id="input" placeholder="Button Text...">
+        <select name="" id="size" class="select">
+          <option value="default">Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <select name="" id="bgColor" class="select">
+          <option value="default">Background Color</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="transparent">Transparent</option>
+          <option value="custom1">Custom 1</option>
+          <option value="custom2">Custom 2</option>
+          <option value="custom3">Custom 3</option>
+          <option value="custom4">Custom 4</option>
+        </select>
+        <select name="" id="txtColor" class="select">
+          <option value="default">Text Color</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="custom1">Custom 1</option>
+          <option value="custom2">Custom 2</option>
+          <option value="custom3">Custom 3</option>
+          <option value="custom4">Custom 4</option>
+        </select>
+      </div>
+      <div class="select-column">
+        <div class="checks">
+          <span>
+            <input type="checkbox" id="bold" class="checkbox">
+            <label for="bold">Bold</label>
+          </span>
+          <span>
+            <input type="checkbox" id="noOutline" class="checkbox">
+            <label for="noOutline">No Border</label>
+          </span>
+          <span>
+            <input type="checkbox" id="round" class="checkbox">
+            <label for="round">Round</label>
+          </span>
+        </div>  
+      </div>
+      <div class="select-column">
+        <select name="" id="border" class="select">
+          <option value="">Border Color</option>
+          <option value="bBlack">Black</option>
+          <option value="bLight">Light </option>
+          <option value="custom1">Custom 1</option>
+          <option value="custom2">Custom 2</option>
+          <option value="custom3">Custom 3</option>
+          <option value="custom4">Custom 4</option>
+        </select>  
+        <select name="" id="shadow" class="select">
+          <option value="">Box Shadow</option>
+          <option value="noShadow">No Shadow</option>
+          <option value="shadow">Shadow</option>
+        </select>
+        <select name="" id="hover" class='select'>
+          <option value="">Hover</option>
+          <option value="">Default</option>
+          <option value="point">Pointer Only</option>
+          <option value="shadow">Shadow Only</option>
+          <option value="shadowPoint">Shadow + Pointer</option>
+          <option value="up">Up Only</option>
+          <option value="upShadow">Up + Shadow</option>
+          <option value="upPoint">Up + Pointer</option>
+          <option value="upShadowPoint">Up + Shadow + Pointer</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="display">
+      <h1 class="tWhite">Css Code</h1>
+      <p class="tWhite">.btn {</p>
+        <div id="sizeD"></div>
+        <div id="bgD"></div>
+        <div id="txtD"></div>
+        <div id="decorD"></div>
+        <div id="borderD"></div>
+        <div id="shadowD"></div>
+      <p>}</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
