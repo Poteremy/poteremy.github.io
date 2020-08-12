@@ -118,10 +118,12 @@
 .bBlack { border: 2px solid #222;}
 .bLight { border: 2px solid rgba(34, 34, 34, .5);}
 /*! Shadow */
-.point:hover { cursor: pointer;}
-.shadow:hover { box-shadow: 1px 1px 5px #222}
-.shadowPoint:hover { cursor: pointer; box-shadow: 1px 1px 5px #222;}
-.up:hover { transform: translateY(-1px);}
-.upShadow:hover { transform: translateY(-1px); box-shadow: 1px 1px 5px #222;}
-.upPoint:hover { transform: translateY(-1px); cursor: pointer;}
-.upShadowPoint:hover { transform: translateY(-1px); cursor: pointer; box-shadow: 1px 1px 5px #222;}
+.shadow { box-shadow: 1px 1px 5px #222;}
+/*! Hover */
+.hpoint:hover { cursor: pointer;}
+.hshadow:hover { box-shadow: 1px 1px 5px #222}
+.hshadowPoint:hover { cursor: pointer; box-shadow: 1px 1px 5px #222;}
+.hup:hover { transform: translateY(-1px);}
+.hupShadow:hover { transform: translateY(-1px); box-shadow: 1px 1px 5px #222;}
+.hupPoint:hover { transform: translateY(-1px); cursor: pointer;}
+.hupShadowPoint:hover { transform: translateY(-1px); cursor: pointer; box-shadow: 1px 1px 5px #222;}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <a href="../index.html"><button id="homeBtn">Go Home</button></a>
+
+      <div class="container">
+        <div class="picker-div">
+            <h1 id="title">Picker</h1>
+            <input type="text" id="name" placeholder="Student Name">
+            <button id="submit" class="btn" onclick="test(event)">Add</button>
+            <h1 id="nameDisplay"></h1>
+            <button id="random" class="btn">Get Random</button>
+            <button id="reset" class="hidden"></button>
+            <button class="btn" id="clear" onclick=resetAll()>Reset All</button>
+        </div>
+        <div class="list">
+            <h1 id="kids">Kid List</h1>
+                <ol id="kidsList"></ol>
+        </div>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
