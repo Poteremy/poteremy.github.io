@@ -1,0 +1,96 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0;}
+
+#homeBtn {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 5px;
+  background: rgba(255,255,255, .2);
+}
+#homeBtn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background-color: transparent;
+  height: 600px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: 10px solid #333;
+  box-shadow: 0 0 0 13px #333;
+  /* border-radius: 10px; */
+}
+
+.p1 {
+  background-color: red;
+}
+
+.p2 {
+  background-color: blue;
+}
+
+#winScreen {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(16, 152, 225, .5);
+  z-index: 1;
+  position: absolute;
+}
+
+#winContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 50vw;
+  margin-left: 25%;
+  height: 300px;
+  margin-top: 200px;
+  
+}
+
+#winText {
+  margin-bottom: 50px;
+}
+
+#resetBtn {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 2px #333 solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #333;
+}
+#reset:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 4px #333;
+}
+
+.hidden {
+  display: none;
+}
