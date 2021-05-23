@@ -59,7 +59,7 @@
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .scheck {
@@ -75,7 +75,8 @@
 /* Utilities */
 
 .correct {
-  background-color: yellow;
+  background-color: #00c957;
+  border: 4px solid #009942;
 }
 
 .wrong {

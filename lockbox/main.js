@@ -9,6 +9,9 @@ let numberfour = document.getElementById('numberfour');
 let num = '4'
 
 // Student Boxes
+let rowone = document.getElementById('rowone');
+let rowtwo = document.getElementById('rowtwo');
+let rowthree = document.getElementById('rowthree');
 let cabox = document.getElementById('cabox');
 let addbox = document.getElementById('addbox');
 let ldbox = document.getElementById('ldbox');
@@ -190,7 +193,10 @@ klcheck.addEventListener('click', kymereCheck)
 
 function revealNumber() {
   if(cabox.classList.contains('correct') && addbox.classList.contains('correct') && ldbox.classList.contains('correct') && ngbox.classList.contains('correct') && nlbox.classList.contains('correct') && stbox.classList.contains('correct') && jdbox.classList.contains('correct') && jgbox.classList.contains('correct') && fjbox.classList.contains('correct') && hjbox.classList.contains('correct') && klbox.classList.contains('correct'))
-  {reveal.classList.remove('hidden')}
+  {rowone.classList.add('hidden')
+    rowtwo.classList.add('hidden')
+    klbox.classList.add('hidden')
+    reveal.classList.remove('hidden')}
   else return
 } 
 
