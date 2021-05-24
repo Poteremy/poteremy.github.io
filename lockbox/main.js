@@ -1,3 +1,7 @@
+// ! Change num - Line 12
+// ! Change numberone, numbertwo, etc - Line 210
+// ! Change correct answers - Lines 62-72
+
 // constants
 
 // Code Numbers
@@ -6,7 +10,9 @@ let numbertwo = document.getElementById('numbertwo');
 let numberthree = document.getElementById('numberthree');
 let numberfour = document.getElementById('numberfour');
 
-let num = '4'
+// ? Code is 5182
+
+let num = '5'
 
 // Student Boxes
 let rowone = document.getElementById('rowone');
@@ -54,17 +60,17 @@ let klcheck = document.getElementById('klcheck');
 
 // Answers
 
-let caleba = '1';
-let aidena = '2';
-let logana = '3';
-let noaha = '4';
-let nicka = '5';
-let sama = '6';
-let jaxsona = '7';
-let jeramiaha = '8';
-let fairleea = '9';
-let haliaa = '10';
-let kymerea = '11';
+let caleba = '63';
+let aidena = '76';
+let logana = '28';
+let noaha = '67';
+let nicka = '24';
+let sama = '34';
+let jaxsona = '21';
+let jeramiaha = '1413';
+let fairleea = '411';
+let haliaa = '67';
+let kymerea = '78';
 
 // Check Functions
 
