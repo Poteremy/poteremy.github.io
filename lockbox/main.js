@@ -1,6 +1,6 @@
-// ! Change num - Line 12
-// ! Change numberone, numbertwo, etc - Line 210
-// ! Change correct answers - Lines 62-72
+// ! Change num - Line 15
+// ! Change numberone, numbertwo, etc - Line 225
+// ! Change correct answers - Lines 76-86
 
 // constants
 
@@ -59,6 +59,19 @@ let hjcheck = document.getElementById('hjcheck');
 let klcheck = document.getElementById('klcheck');
 
 // Answers
+
+// ! Day 2
+// Halia - 975
+// Noah - s
+// Sam - k
+// Caleb - h
+// Jaxson - k
+// Fairlee - u
+// Jeramiah - t
+// Nick - h
+// Kymere - L
+// Aiden - a
+// Logan - e
 
 let caleba = '63';
 let aidena = '76';
