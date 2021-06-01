@@ -73,6 +73,16 @@ let klcheck = document.getElementById('klcheck');
 // Aiden - a
 // Logan - e
 
+// ! Day 3
+// Halia - rgop
+// Everyone else - congrats
+
+//! Day 4
+// Sam, Caleb, Jaxson - 12
+// Nick, Noah, Jeramiah - 0
+// Kymere, Halia, Logan - 11
+// Aiden, Fairlee - 9
+
 let caleba = '63';
 let aidena = '76';
 let logana = '28';
@@ -218,6 +228,15 @@ function revealNumber() {
     reveal.classList.remove('hidden')}
   else return
 } 
+
+let answers = document.querySelectorAll('.answer')
+
+answers.forEach(answer => answer.addEventListener('keyup', function(e) {
+  e.preventDefault;
+  if(e.keyCode===13) {
+    answer.nextElementSibling.click();
+  }
+}))
 
 document.addEventListener('click', revealNumber)
 
