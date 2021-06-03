@@ -92,7 +92,7 @@ let sama = 'congrats';
 let jaxsona = 'congrats';
 let jeramiaha = 'congrats';
 let fairleea = 'congrats';
-let haliaa = 'rgop';
+let haliaa = 'rgopen';
 let kymerea = 'congrats';
 
 // Check Functions
