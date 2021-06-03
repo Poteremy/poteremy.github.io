@@ -12,7 +12,7 @@ let numberfour = document.getElementById('numberfour');
 
 // ? Code is 5182
 
-let num = '1'
+let num = '8'
 
 // Student Boxes
 let rowone = document.getElementById('rowone');
@@ -83,17 +83,17 @@ let klcheck = document.getElementById('klcheck');
 // Kymere, Halia, Logan - 11
 // Aiden, Fairlee - 9
 
-let caleba = 'h';
-let aidena = 'a';
-let logana = 'e';
-let noaha = 's';
-let nicka = 'h';
-let sama = 'k';
-let jaxsona = 'k';
-let jeramiaha = 't';
-let fairleea = 'u';
-let haliaa = '975';
-let kymerea = 'l';
+let caleba = 'congrats';
+let aidena = 'congrats';
+let logana = 'congrats';
+let noaha = 'congrats';
+let nicka = 'congrats';
+let sama = 'congrats';
+let jaxsona = 'congrats';
+let jeramiaha = 'congrats';
+let fairleea = 'congrats';
+let haliaa = 'rgop';
+let kymerea = 'congrats';
 
 // Check Functions
 
@@ -241,6 +241,6 @@ answers.forEach(answer => answer.addEventListener('keyup', function(e) {
 document.addEventListener('click', revealNumber)
 
 function replace() {
-  numbertwo.innerText = num
+  numberthree.innerText = num
 }
 reveal.addEventListener('click', replace)
