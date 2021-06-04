@@ -1,0 +1,179 @@
+:root {
+  background-color: #ccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.problem {
+  display: grid;
+  margin: 0px 70px;
+  grid-template-columns: 25% 12.5% 25% 12.5% 25%;
+  text-align: center;
+}
+
+.textThree {
+  margin-top: 250px;
+}
+
+.textOne, .textTwo, .textFour, .textFive {
+  margin-top: 300px;
+}
+
+
+
+.answer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#answer {
+  margin-bottom: 40px;
+  padding: 10px 5px;
+  font-size: 64px;
+  width: 100px;
+  text-align: center;
+  background-color: rgb(233, 230, 230);
+  border: 1px solid #181A18;
+}
+
+#answer:focus {
+  outline: none;
+}
+
+#submit {
+  font-size: 24px;
+  padding: 5px 10px;
+  border: 2px solid #181A18;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+  opacity: 0%;
+}
+
+#picture {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 200px;
+}
+
+
+/* Animations */
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+.fade-out {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}

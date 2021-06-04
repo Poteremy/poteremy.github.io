@@ -12,7 +12,7 @@ let numberfour = document.getElementById('numberfour');
 
 // ? Code is 5182
 
-let num = '5'
+let num = '2'
 
 // Student Boxes
 let rowone = document.getElementById('rowone');
@@ -241,6 +241,6 @@ answers.forEach(answer => answer.addEventListener('keyup', function(e) {
 document.addEventListener('click', revealNumber)
 
 function replace() {
-  numberone.innerText = num
+  numberfour.innerText = num
 }
 reveal.addEventListener('click', replace)
