@@ -78,22 +78,22 @@ let klcheck = document.getElementById('klcheck');
 // Everyone else - congrats
 
 //! Day 4
-// Sam, Caleb, Jaxson - 12
-// Nick, Noah, Jeramiah - 0
-// Kymere, Halia, Logan - 11
-// Aiden, Fairlee - 9
+// Sam, Caleb, Jaxson - 9
+// Nick, Noah, Jeramiah - 6
+// Kymere, Halia, Logan - 20
+// Aiden, Fairlee - 16
 
-let caleba = '63';
-let aidena = '76';
-let logana = '28';
-let noaha = '67';
-let nicka = '24';
-let sama = '34';
-let jaxsona = '21';
-let jeramiaha = '1413';
-let fairleea = '411';
-let haliaa = '67';
-let kymerea = '78';
+let caleba = '9';
+let aidena = '16';
+let logana = '20';
+let noaha = '6';
+let nicka = '6';
+let sama = '9';
+let jaxsona = '9';
+let jeramiaha = '6';
+let fairleea = '16';
+let haliaa = '20';
+let kymerea = '20';
 
 // Check Functions
 
