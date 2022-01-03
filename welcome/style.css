@@ -1,0 +1,54 @@
+:root {
+  background-color: aquamarine;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(0, 0, 0) 2px;
+  width: 23%;
+  height: 150px;
+  background-color: darkcyan;
+  border-radius: 5px;
+}
+
+.box>h2 {
+  font-size: 50px;
+}
+
+.top>h1 {
+  text-align: center;
+  font-size: 76px;
+}
+.out {
+  background-color: rgb(2, 59, 66);
+  pointer-events: none;
+}
+
+.questions {
+  text-align: center;
+}
+
+.btn {
+  font-size: 18px;
+  border: solid black 2px;
+  background-color: rgb(75, 181, 207);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+#answerSpace {
+  font-size: 50px;
+}
