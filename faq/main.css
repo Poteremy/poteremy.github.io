@@ -28,6 +28,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 #image {
@@ -106,31 +107,4 @@ img {
 .accordion .container.active .label::before {
   content: '-';
   font-size: 30px;
-}
-
-@media only screen and (max-width: 600px) {
-  #title {
-    margin-top: 150px;
-  }
-
-  #image {
-    padding-top: 200px;
-    padding-bottom: 350px;
-  }
-
-  img {
-    height: 700px;
-  }
-
-  #words>h2 {
-    padding-bottom: 50px;
-  }
-
-  .accordion-body {
-    margin-bottom: 50px;
-  }
-
-  #words {
-    width: 700px;
-  }
 }
