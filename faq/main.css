@@ -27,6 +27,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #image {
