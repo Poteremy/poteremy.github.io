@@ -1,77 +1,30 @@
-html {
+:root {
   background-color: #ffd2ba;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,h2,h3 {
+  color: #3154ad !important;
 }
 
 h1 {
-  color: #3154ad;
   font-size: 120px;
-  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
-h2 {
-  color: #3154ad;
-  font-size: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#imageOne {
+  height: 40em;
+  width: 40em;
 }
 
-h3 {
-  color: #3154ad;
-  font-size: 30px;
-  margin-top: 10px;
+#title {
+  margin-top: 1em;
+  font-size: 5em !important;
 }
-
-#bigboy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-#image {
-  padding-bottom: 30px;
-}
-
-img {
-  height: 600px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#words {
-  text-align: center;
-}
-
-.center {
-  text-align: center;
-}
-
-.accordion {
-  width: 800px;
-  margin-top: 60px;
-}
-
-
-
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
-}
-
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
 
 .accordion .label {
   position: relative;
-  padding: 10px 0;
-  font-size: 30px;
+  padding: 10px 20px;
+  font-size: 1.1em;
   color: black;
   cursor: pointer; }
 
@@ -80,31 +33,31 @@ img {
     color: black;
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: 1em;
     font-size: 30px;
     transform: translateY(-50%);
   }
   
-  .accordion .content {
+  .accordion .contents {
     position: relative;
     height: 0;
-    font-size: 20px;
-    text-align: justify;
-    width: 780px;
+    font-size: 1em;
+    /* text-align: center; */
+    width: auto;
     overflow: hidden;
     transition: 0.5s;
   }
   
   .accordion hr {
     width: 100;
-    margin-left: 0;
+    margin: 0 1em;
     border: 1px solid grey;}
 
-.accordion .container.active .content {
-  height: 150px;
+.accordion .containers.active .contents {
+  height: auto;
 }
 
-.accordion .container.active .label::before {
+.accordion .containers.active .label::before {
   content: '-';
   font-size: 30px;
 }
