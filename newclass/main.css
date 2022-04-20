@@ -1,0 +1,150 @@
+:root {
+  background-color: #f0d08b;
+}
+
+.row {
+  display: flex;
+}
+
+#head {
+  text-align: center;
+}
+
+#head>h1 {
+  font-size: 3em;
+}
+
+/* Boxes */
+
+.box {
+  background-color: #93b7be;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 20%;
+  margin: 2% 5%;
+  border: 2px solid rgba(0, 0, 0, 0.486);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+#boxNine {
+  background-color: #93b7be;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 15%;
+  margin-left: 30%;
+  margin-top: 2%;
+  border: 2px solid rgba(0, 0, 0, 0.486);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+#boxTen {
+  background-color: #93b7be;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 15%;
+  margin-left: 9.5%;
+  margin-top: 2%;
+  border: 2px solid rgba(0, 0, 0, 0.486);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+/* Box Contents */
+.name {
+  text-align: center;
+  margin-bottom: 50%;
+}
+/* Inputs */
+.textIn {
+  width: 50%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+/* Buttons */
+.btn {
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: .3em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Utilities */
+.hidden {
+  display: none !important;
+}
+
+.correct {
+  background-color: rgb(72, 170, 72) !important;
+}
+
+/* Win Screen */
+
+#revealBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #93b7be;
+  border: 4px solid rgba(0, 0, 0, 0.542);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+  border-radius: 10px;
+  width: 80%;
+  height: 500px;
+  margin: 100px 10%;
+}
+
+.and {
+  margin: 50px 0;
+  font-size: 4em;
+}
+
+.prize {
+  margin: 3em;
+  font-size: 3em;
+}
+
+.block {
+  background-color: #315659;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+.back {
+  z-index: -1;
+}
+
+.front {
+  z-index: 1;
+}
+
+.easeOut {
+  animation: fadeout 2s  0s 1 normal forwards;
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
