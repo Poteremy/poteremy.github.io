@@ -139,8 +139,17 @@ function checkAll() {
   } else return
 }
 
+function remove () {
+  let boxes = document.querySelectorAll('.box')
+  for(i=0; i<boxes.length; i++) {
+    boxes[i].classList.remove('correct')
+  }
+}
 // Reveal
 function revealIt() {
+  remove()
+  boxNine.classList.remove('correct')
+  boxTen.classList.remove('correct')
   clickReveal.classList.add('easeOut')
   setTimeout(function() {prize.classList.remove('hidden')}, 2000)
   setTimeout(function() {clickReveal.classList.add('hidden')}, 2000)
