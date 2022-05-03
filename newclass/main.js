@@ -1,14 +1,14 @@
 // Answers
-let christopher = "71";
-let brody = "92";
+let christopher = "flag";
+let brody = "sled";
 let isla = "82";
-let anthony = "19";
-let jaxson = "235";
-let jeramiah = "132";
-let kymere = "111";
-let fairlee = "143";
+let anthony = "spike";
+let jaxson = "float";
+let jeramiah = "fresh";
+let kymere = "dream";
+let fairlee = "flush";
 let halia = "1";
-let chase = "52";
+let chase = "frame";
 
 // Dom Objects
 
