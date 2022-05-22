@@ -14,6 +14,17 @@
   font-size: 3em;
 }
 
+/* Code Area */
+#lockCode {
+  text-align: center;
+}
+
+#lockCode h2 {
+  font-size: 4em;
+  margin-top: 1em;
+  margin-bottom: .4em;
+}
+
 /* Boxes */
 
 .box {
@@ -117,8 +128,8 @@
 }
 
 .prize {
-  margin: 3em;
-  font-size: 3em;
+  /* margin: 3em; */
+  font-size: 8em;
 }
 
 .block {

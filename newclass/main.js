@@ -1,14 +1,68 @@
 // Answers
-let christopher = "flag";
-let brody = "sled";
-let isla = "82";
-let anthony = "spike";
-let jaxson = "float";
-let jeramiah = "fresh";
-let kymere = "dream";
-let fairlee = "flush";
+let christopher = "1";
+let brody = "1";
+let isla = "1";
+let anthony = "1";
+let jaxson = "1";
+let jeramiah = "1";
+let kymere = "1";
+let fairlee = "1";
 let halia = "1";
-let chase = "frame";
+let chase = "1";
+
+//! Code is 5182
+
+//TODO Each Day
+
+/* 
+ - Change num variable
+ - Go to backItUp function and change code.innerHtml
+ - Change answers
+ - Change h2#code text to include number from previous day
+ - Change h1#theNumber in div#revealBox text to "the (first, second, third, last) number of the code is..."
+*/
+
+let num = 5
+
+/* 
+? Day 1 Answers
+Christopher - 92
+Brody - 108
+Anthony - 19
+Jaxson - 506
+Jeramiah - 27
+Ky'mere - 72
+Fairlee - 48
+Halia - 9
+Chase - 45
+
+? Day 2
+Christopher - sled
+Brody - flip
+Anthony - smile
+Jaxson - sleep
+Jeramiah - drum
+Ky'mere - float
+Fairlee - stop
+Halia - 
+Chase - spike
+
+? Day 3
+Ky'mere, Fairlee, Jeramiah - 14
+Jaxson, Christopher, Chase - 15
+Brody, Anthony, Halia - 6
+
+? Day 4
+Christopher - 3152flag
+Brody - 4226sled
+Anthony - 149shape
+Jaxson - 46163boast
+Jeramiah - 2416swim
+Ky'mere - 4542dream
+Fairlee - 3226best
+Halia - 864
+Chase - 6040smoke
+*/
 
 // Dom Objects
 
@@ -18,6 +72,8 @@ let clickReveal = document.getElementById('clickReveal');
 let prize = document.getElementById('prize');
 let sound = document.getElementById('sound');
 let soundTwo = document.getElementById('soundTwo');
+let theNumber = document.getElementById('theNumber');
+let code = document.getElementById('code');
 
 // Boxes
 let boxOne = document.getElementById('boxOne');
@@ -54,6 +110,7 @@ let kBtn = document.getElementById('kBtn');
 let fBtn = document.getElementById('fBtn');
 let hBtn = document.getElementById('hBtn');
 let chBtn = document.getElementById('chBtn');
+let goBack = document.getElementById('goBack');
 
 // Check Functions Definitions
 
@@ -151,8 +208,11 @@ function revealIt() {
   boxNine.classList.remove('correct')
   boxTen.classList.remove('correct')
   clickReveal.classList.add('easeOut')
+  prize.innerText = num
   setTimeout(function() {prize.classList.remove('hidden')}, 2000)
   setTimeout(function() {clickReveal.classList.add('hidden')}, 2000)
+  setTimeout(function() {goBack.classList.remove('hidden')}, 2000)
+  // goBack.classList.remove('hidden')
   soundTwo.play()
 }
 
@@ -189,5 +249,16 @@ hBtn.addEventListener("click", function() {
 chBtn.addEventListener("click", function() {
   chCheck()
 })
+
+// Go Back Button after number reveal
+function backItUp() {
+  containerBox.classList.remove('hidden')
+    containerBox.classList.add('front')
+    revealBox.classList.add('hidden')
+    revealBox.classList.add('back')
+    code.innerHTML = `${num} * * *`
+}
+
+goBack.addEventListener('click', backItUp)
 
 document.addEventListener('click', checkAll)

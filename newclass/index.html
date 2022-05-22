@@ -8,9 +8,12 @@
   </head>
   <body>
     <div id="head">
-      <h1>Teamwork Makes the Dream Work</h1>
+      <h1>Unlock The Box</h1>
     </div>
     <div id="containerBox" class="container">
+      <div id="lockCode">
+        <h2 id="code">* * * *</h2>
+      </div>
       <div class="row">
         <div id="boxOne" class="box">
           <h2 class="name">Christopher</h2>
@@ -56,10 +59,10 @@
         </div>
       </div>
       <div class="row">
-        <div id="boxNine" class="boxFinal correct">
+        <div id="boxNine" class="boxFinal">
           <h2 class="name">Halia</h2>
-          <input type="text" id="hAnswer" class="textIn hidden">
-          <button id="hBtn" class="btn hidden">Check</button>
+          <input type="text" id="hAnswer" class="textIn">
+          <button id="hBtn" class="btn">Check</button>
         </div>
         <div id="boxTen" class="boxFinal">
           <h2 class="name">Chase</h2>
@@ -70,9 +73,10 @@
     </div>
     <div id="revealBox" class="container hidden">
       <div class="winScreen">
-        <h1 class="and">And your prize is...</h1>
+        <h1 id="theNumber" class="and">The first number of the code is...</h1>
         <h1 id="clickReveal" class="block">Click here to reveal</h1>
-        <h1 id="prize" class="prize hidden">10 minutes of free time at the end of the day</h1>
+        <h1 id="prize" class="prize hidden"></h1>
+        <button id="goBack" class="btn hidden">Go Back</button>
       </div>
     </div>
     <audio src="/assets/sfx-victory1.mp3" id="sound"></audio>
