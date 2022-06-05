@@ -1,14 +1,14 @@
 // Answers
-let christopher = "1";
-let brody = "1";
+let christopher = "92";
+let brody = "108";
 let isla = "1";
-let anthony = "1";
-let jaxson = "1";
-let jeramiah = "1";
-let kymere = "1";
-let fairlee = "1";
-let halia = "1";
-let chase = "1";
+let anthony = "19";
+let jaxson = "506";
+let jeramiah = "27";
+let kymere = "72";
+let fairlee = "48";
+let halia = "9";
+let chase = "45";
 
 //! Code is 5182
 
@@ -44,7 +44,7 @@ Jaxson - sleep
 Jeramiah - drum
 Ky'mere - float
 Fairlee - stop
-Halia - 
+Halia - halia
 Chase - spike
 
 ? Day 3
@@ -56,8 +56,8 @@ Brody, Anthony, Halia - 6
 Christopher - 3152flag
 Brody - 4226sled
 Anthony - 149shape
-Jaxson - 46163boast
-Jeramiah - 2416swim
+Jaxson - 46144boast
+Jeramiah - 2441swim
 Ky'mere - 4542dream
 Fairlee - 3226best
 Halia - 864
