@@ -1,14 +1,14 @@
 // Answers
-let christopher = "92";
-let brody = "108";
+let christopher = "sled";
+let brody = "flip";
 let isla = "1";
-let anthony = "19";
-let jaxson = "506";
-let jeramiah = "27";
-let kymere = "72";
-let fairlee = "48";
-let halia = "9";
-let chase = "45";
+let anthony = "smile";
+let jaxson = "sleep";
+let jeramiah = "drum";
+let kymere = "float";
+let fairlee = "stop";
+let halia = "halia";
+let chase = "spike";
 
 //! Code is 5182
 
@@ -22,7 +22,7 @@ let chase = "45";
  - Change h1#theNumber in div#revealBox text to "the (first, second, third, last) number of the code is..."
 */
 
-let num = 5
+let num = 1
 
 /* 
 ? Day 1 Answers
@@ -256,7 +256,7 @@ function backItUp() {
     containerBox.classList.add('front')
     revealBox.classList.add('hidden')
     revealBox.classList.add('back')
-    code.innerHTML = `${num} * * *`
+    code.innerHTML = `5 ${num} * *`
 }
 
 goBack.addEventListener('click', backItUp)
